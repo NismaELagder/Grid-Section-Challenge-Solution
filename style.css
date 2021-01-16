@@ -1,0 +1,180 @@
+body {
+  background-color: #edf2f8;
+  font-size: 13px;
+}
+
+@font-face {
+  font-family: barlow semi condensed;
+  src: url(https://fonts.google.com/specimen/Barlow+Semi+Condensed);
+}
+
+.container {
+  width: 80%;
+  margin: 5% auto 1%;
+}
+
+.daniel,
+.jonathan,
+.jeanette,
+.kira,
+.patrick {
+  border-radius: 15px;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+
+.daniel {
+  background-color: #7541c9;
+  color: #edf2f8;
+}
+.jonathan {
+  background-color: #49556b;
+}
+
+.jeanette,
+.kira {
+  background-color: #fff;
+}
+
+.patrick {
+  background-color: #19212e;
+}
+
+.daniel img,
+.jonathan img,
+.jeanette img,
+.kira img,
+.patrick img {
+  border-radius: 50%;
+  border: solid #9264db 2px;
+  margin: 2em 0.5em 2em 1em;
+  float: left;
+}
+
+.daniel #dan-id,
+.jonathan #jon-id,
+.jeanette #jean-id,
+.kira #kira-id,
+.patrick #pat-id {
+  float: left;
+  margin: 30px 0px 0px 20px;
+}
+
+.daniel #dan-id h4,
+.jonathan h4,
+.patrick h4 {
+  margin: 5px 0px;
+}
+
+.daniel #dan-id h5,
+.jonathan h5 {
+  margin: 0px;
+  color: #9264db;
+}
+
+.daniel p.bold,
+.jonathan p.bold,
+.patrick p.bold {
+  clear: both;
+  color: #fff;
+  font-size: 1.5em;
+  margin: 5px 20px;
+}
+.daniel p.light {
+  color: #cfbaf0;
+  font-size: 1.2em;
+  margin: 10px 20px;
+}
+
+.jonathan img,
+.jeanette img,
+.kira img {
+  border: none;
+}
+
+.jonathan h4,
+.patrick h4 {
+  color: #edf2f8;
+}
+
+.jonathan h5,
+.patrick h5 {
+  color: #c9cdd4;
+}
+
+.jonathan p.bold,
+.patrick p.bold {
+  width: 80%;
+  margin: 10px auto 0px;
+}
+
+.jonathan p.light,
+.jeanette p.light,
+.kira p.light,
+.patrick p.light {
+  width: 80%;
+  font-size: 1.2em;
+  margin: 10px auto;
+  color: #aaabac;
+}
+
+.jeanette h4,
+.kira h4 {
+  margin: 5px 0;
+  color: #49556b;
+}
+
+.jeanette h5,
+.kira h5 {
+  margin: 0;
+  color: #aaabac;
+}
+
+.jeanette p.bold,
+.kira p.bold {
+  color: #49556b;
+  width: 80%;
+  margin: 20px auto;
+  clear: both;
+  font-size: 1.5em;
+}
+
+.jeanette p.light,
+.kira p.light {
+  margin: 20px auto;
+  color: #aaabac;
+}
+
+/* Desktop Design  */
+
+@media all and (min-width: 992px) {
+  .container {
+    display: grid;
+    width: 80%;
+    grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+    gap: 20px;
+    grid-template-areas:
+      "daniel daniel jonathan kira"
+      "janette patrick patrick kira";
+  }
+
+  .daniel {
+    grid-area: daniel;
+  }
+
+  .jonathan {
+    grid-area: jonathan;
+  }
+
+  .jeanette {
+    grid-area: janette;
+  }
+
+  .kira {
+    grid-area: kira;
+  }
+
+  .patrick {
+    grid-area: patrick;
+  }
+}
