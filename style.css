@@ -177,4 +177,12 @@ body {
   .patrick {
     grid-area: patrick;
   }
+  
+  .daniel,
+  .jonathan,
+  .jeanette,
+  .patrick,
+  .kira {
+    margin-bottom: 0;
+  }
 }
